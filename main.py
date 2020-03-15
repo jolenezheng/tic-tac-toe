@@ -19,6 +19,9 @@ def print_board(game_board):
                 print('- ', end='')
         print()
 
+# Checks the row, column, and diagonals (if applicable) of the most recent move
+# Algorithm can be made much simpler with the use of a normal 1d array and listing out the 
+# indexes of winning combinations, but I wanted to practice using 2d arrays so this will have to do...
 def check_win(game_board, player, last_move, turn):
     index = last_move[1]
     matches = 0
